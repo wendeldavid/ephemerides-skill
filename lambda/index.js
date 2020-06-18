@@ -345,13 +345,12 @@ const skillBuilder = Alexa.SkillBuilders.custom();
 
 exports.handler = skillBuilder
   .addRequestHandlers(
-    // GetNewFactHandler,
     HomeHandler,
     HelpHandler,
     ExitHandler,
     FallbackHandler,
-    SessionEndedRequestHandler
-    
+    SessionEndedRequestHandler,
+    EphemerideHandler
   )
   .addRequestInterceptors(LocalizationInterceptor)
   .addErrorHandlers(ErrorHandler)
