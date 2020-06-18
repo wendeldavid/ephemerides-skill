@@ -1,0 +1,258 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "dados covid dezenove",
+      "intents": [
+        {
+          "name": "caseContamination",
+          "slots": [
+            {
+              "name": "location",
+              "type": "place"
+            }
+          ],
+          "samples": [
+            "números de contaminados em {location}",
+            "quantos contaminados em {location}",
+            "total de contaminados no {location}",
+            "número de pssoas contaminadas em {location}",
+            "quantas pessoas foram contaminadas em {location}",
+            "contaminação no {location}"
+          ]
+        },
+        {
+          "name": "caseDeaths",
+          "slots": [
+            {
+              "name": "location",
+              "type": "place"
+            }
+          ],
+          "samples": [
+            "qual o número de mortos em {location}",
+            "mortes no {location}",
+            "quantos mortos em {location}",
+            "total de mortes em {location}",
+            "quantas pessoas morreram em {location}",
+            "mortes em {location}",
+            "pessoas mortas em {location}"
+          ]
+        },
+        {
+          "name": "dataSource",
+          "slots": [],
+          "samples": [
+            "qual a fonte destas informações",
+            "qual a fonte dos dados",
+            "local dos dados",
+            "local das informações",
+            "fonte dos números",
+            "fonte dos dados",
+            "de onde vêm estas informações",
+            "informações"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancelar"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "frases",
+            "comandos",
+            "ajude",
+            "o que posso perguntar"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "encerrar",
+            "pare"
+          ]
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [],
+          "samples": [
+            "um fato",
+            "um fato espacial",
+            "me conta um fato sobre o espaço",
+            "fale um fato espacial",
+            "me dê um fato sobre o espaço",
+            "me da um fato espacial",
+            "me conta um fato",
+            "me conta um fato sobre o espaço",
+            "me conta um fato espacial",
+            "me conta um fato interessante",
+            "me dê informações sobre o espaço",
+            "me fale coisas interessantes sobre o espaço",
+            "me conta algo interessante",
+            "mais um",
+            "mais uma",
+            "me da mais um fato",
+            "quero ouvir um fato sobre o espaço"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": [
+            "início",
+            "ir para o início"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "brasil"
+              }
+            },
+            {
+              "name": {
+                "value": "tocantins"
+              }
+            },
+            {
+              "name": {
+                "value": "sergipe"
+              }
+            },
+            {
+              "name": {
+                "value": "são paulo"
+              }
+            },
+            {
+              "name": {
+                "value": "santa catarina"
+              }
+            },
+            {
+              "name": {
+                "value": "roraima"
+              }
+            },
+            {
+              "name": {
+                "value": "rondônia"
+              }
+            },
+            {
+              "name": {
+                "value": "rio grande do sul"
+              }
+            },
+            {
+              "name": {
+                "value": "rio grande do norte"
+              }
+            },
+            {
+              "name": {
+                "value": "rio de janeiro"
+              }
+            },
+            {
+              "name": {
+                "value": "piauí"
+              }
+            },
+            {
+              "name": {
+                "value": "pernanbuco"
+              }
+            },
+            {
+              "name": {
+                "value": "paraná"
+              }
+            },
+            {
+              "name": {
+                "value": "paraíba"
+              }
+            },
+            {
+              "name": {
+                "value": "pará"
+              }
+            },
+            {
+              "name": {
+                "value": "minas gerais"
+              }
+            },
+            {
+              "name": {
+                "value": "mato grosso do sul"
+              }
+            },
+            {
+              "name": {
+                "value": "mato grosso"
+              }
+            },
+            {
+              "name": {
+                "value": "maranhão"
+              }
+            },
+            {
+              "name": {
+                "value": "goiás"
+              }
+            },
+            {
+              "name": {
+                "value": "espírito santo"
+              }
+            },
+            {
+              "name": {
+                "value": "distrito federal"
+              }
+            },
+            {
+              "name": {
+                "value": "ceará"
+              }
+            },
+            {
+              "name": {
+                "value": "bahia"
+              }
+            },
+            {
+              "name": {
+                "value": "amazonas"
+              }
+            },
+            {
+              "name": {
+                "value": "amapá"
+              }
+            },
+            {
+              "name": {
+                "value": "alagoas"
+              }
+            },
+            {
+              "name": {
+                "value": "acre"
+              }
+            }
+          ],
+          "name": "place"
+        }
+      ]
+    }
+  },
+  "version": "4"
+}
