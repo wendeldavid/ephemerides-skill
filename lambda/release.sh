@@ -6,4 +6,4 @@ rm -rf node_modules
 
 npm install --only=prod
 
-zip -q -r alexa-kill.zip *
+zip -q -r alexa-skill.zip *

@@ -11,17 +11,25 @@ module.exports = {
             SKILL_NAME: 'Efemérides',
             HELP_MESSAGE: 'Efeméride é um fato histórico. Você pode pedir para eu contar uma que aconteceu no dia de hoje, e eu irei procurar alguma para contar.',
             HELP_REPROMPT: 'O que deseja saber?',
-            FALLBACK_MESSAGE: 'Não tenho uma resposta para isso. Apenas posso tentar buscar os dados da pandemia por estado, ou a soma do Brasil. Como posso ajudar?',
-            FALLBACK_REPROMPT: 'Eu posso contar dados sobre a pandemia de corona vírus no Brasil. Como posso ajudar?',
+            FALLBACK_MESSAGE: 'Estou tendo algum problema, não consegui achar nos meus registros nenhum fato relevante. Gostaria de saber mais?',
+            FALLBACK_REPROMPT: 'Eu posso contar algum fato hisórico. Gostaria de saber algum?',
             ERROR_MESSAGE: 'Desculpe, algo deu errado.',
-            STOP_MESSAGE: 'Tchau!',
-            FACTS:
+            STOP_MESSAGE: 
             [
-                'Um ano em Mercúrio só dura 88 dias.',
-                'Apesar de ser mais distante do sol, Venus é mais quente que Mercúrio.',
-                'Visto de marte, o sol parece ser metade to tamanho que nós vemos da terra.',
-                'Júpiter tem os dias mais curtos entre os planetas no nosso sistema solar.',
-                'O sol é quase uma esfera perfeita.',
+                'Tchau!',
+                'Até',
+                'Até a próxima',
+                'Vou sentir saudades',
+                'ahhhh tinha outra legal pra contar. Mas vou deixar para a próxima.',
+                'Espero tenha gostado.'
+            ],
+            REPROMPT:
+            [
+                'Você gostaria de saber outro fato histórico?',
+                'Se você quiser, posso contar outro.',
+                'Deseja saber mais?',
+                'Posso contar outro?',
+                'Se você quiser saber mais um, basta pedir.',
             ],
         }
     }

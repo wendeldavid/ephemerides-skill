@@ -157,7 +157,9 @@ const getToday = function() {
 }
 
 const getEphemeride = async function(handlerInput) {
-  const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+    const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+    const randomReprompt = requestAttributes.t('REPROMPT');
+
     const responseBuilder = handlerInput.responseBuilder;
       
     const date = getToday();
@@ -173,8 +175,9 @@ const getEphemeride = async function(handlerInput) {
         }
 
         return responseBuilder
-            .speak(ephemerides)
-            .reprompt('Você gostaria de saber outro fato histórico?')
+            .speak(ephemerides + '.' + randomReprompt)
+            // .withShouldEndSession(true)
+            .reprompt(randomReprompt)
             .getResponse();
         
         
@@ -251,7 +254,8 @@ const ExitHandler = {
     const request = handlerInput.requestEnvelope.request;
     return request.type === 'IntentRequest'
       && (request.intent.name === 'AMAZON.CancelIntent'
-        || request.intent.name === 'AMAZON.StopIntent');
+        || request.intent.name === 'AMAZON.StopIntent'
+        || request.intent.name === 'AMAZON.NoIntent');
   },
   handle(handlerInput) {
     const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
@@ -321,12 +325,14 @@ const EphemerideHandler = {
   canHandle(handlerInput) {
     const request = handlerInput.requestEnvelope.request;
     return request.type === 'IntentRequest'
-      && request.intent.name === 'ephemeride';
+      && (request.intent.name === 'ephemeride'
+      || request.intent.name === 'AMAZON.YesIntent');
   },
   async handle(handlerInput) {
     return getEphemeride(handlerInput);
   }
 };
+
 
 const HomeHandler = {
   canHandle(handlerInput) {
