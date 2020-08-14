@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ask-sdk": "^2.8.0",
-    "ask-sdk-core": "^2.0.0",
-    "ask-sdk-model": "^1.0.0",
-    "i18next": "^15.0.5",
+    "ask-sdk": "^2.9.0",
+    "ask-sdk-core": "^2.9.0",
+    "ask-sdk-model": "^1.29.0",
+    "i18next": "^19.6.3",
     "node-html-parser": "^1.2.20"
   },
   "devDependencies": {
